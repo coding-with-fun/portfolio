@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+const { default: Body } = require("./components/Body");
+const { default: Footer } = require("./components/Footer");
+const { default: Navbar } = require("./components/Navbar");
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="app__container">
+            <Navbar />
+            <Body />
+            <Footer />
+        </div>
+    );
 }
 
 export default App;
