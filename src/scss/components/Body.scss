@@ -1,7 +1,10 @@
+@import "./Body/About.scss";
+@import "./Body/ContactMe.scss";
 @import "./Body/Home.scss";
+@import "./Body/Projects.scss";
 @import "./Body/Skills.scss";
 
 .body__container {
     margin: 65px 0 86px 0;
-    height: calc(100vh - 65px - 86px);
+    width: 100%;
 }
